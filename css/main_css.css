@@ -40,6 +40,32 @@ body {
     }
 }
 /* End Global */
+/* Start Components */
+.special-head {
+    color: #ebeced;
+    font-size: 6.25em;
+    font-weight: 800;
+    margin: 0;
+    text-align: center;
+  }
+  
+  .special-head + p {
+    color: #797979;
+    font-size: 20px;
+    margin-top: -30px;
+    text-align: center;
+  }
+
+  @media (max-width: 767px) {
+    .special-head {
+      font-size: 5em;
+    }
+
+    .special-head + p {
+        margin-top: -22.5px
+    }
+  }
+  /* End Components */
 /* Start Header  */
 .header {
     padding: 20px;
@@ -140,7 +166,7 @@ body {
 .landing {
     background-image: url(../image/landing.jpg);
     background-size: cover;
-    height: calc(100vh - 65px);
+    height: calc(100vh - 64px);
     position: relative;
     text-align: center;
 }
@@ -149,11 +175,93 @@ body {
     position: absolute;
     left: 50%;
     top: 50%;
-    line-height: 35px;
     transform: translate(-50%, -50%);
     -webkit-transform: translate(-50%, -50%);
     -moz-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     -o-transform: translate(-50%, -50%);
+    width: 320px;
+    max-width: 100%;
 }
- /* End Landing Section */
+
+.landing .text h1 {
+    margin: 0;
+    font-size: 3.12em;
+    font-weight: bold;
+    color: #10cab7;
+}
+
+.landing .text p {
+    font-size: 1.2em;
+    line-height: 1.8;
+}
+/* End Landing Section */
+/* Start Features section */
+.features {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #f6f6f6;
+}
+
+.features .container {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.features .container .feat {
+    padding: 20px;
+    text-align:center;
+}
+
+.features .container .feat i {
+    color: #10cab7;
+}
+
+.features .container .feat h3 {
+    font-weight: 800;
+    margin: 30px 0;
+}
+
+.features .container .feat p {
+    color: #777;
+    line-height: 1.8;
+}
+/* End Features section */
+/* Start Services Section */
+.services {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.services .services-conten {
+    margin-top: 100px;
+    text-align: left;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+
+.services .services-conten .services-items {
+    display: grid;
+    grid-template-rows: auto 1fr;
+} 
+
+.services .services-conten .services-items i {
+    grid-area: 1/ 1/ 1/ 2;
+    margin-right: 15px;
+    color: #10cab7;
+}
+
+.services .services-conten .services-items h3 {
+    grid-area: 1/ 2/ 1/ 2;
+    margin: 0 0 20px ;
+    
+}
+
+.services .services-conten .services-items p {
+    grid-area: 2/ 2/ 2/ 2;
+    color: #444;
+    line-height: 1.6;
+}
+/* End Services Section */
