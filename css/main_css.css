@@ -19,6 +19,7 @@ body {
     padding-right: 50px;
     margin-left: auto;
     margin-right: auto;
+    overflow-wrap: wrap;
 }
 
 /* Small */
@@ -60,7 +61,7 @@ body {
 
   @media (max-width: 767px) {
     .special-head {
-      font-size: 5em;
+      font-size: 4.5em;
     }
 
     .special-head + p {
@@ -300,6 +301,7 @@ margin: 0;
     color: #777;
     line-height: 1.6;
 }
+
 /* End portfolio section */
 /* Start About Section */
 .about {
@@ -430,6 +432,7 @@ margin: 0;
 }
 .footer p {
     margin-bottom: 0;
+    margin-top: 0;
     padding: 30px 10px;
     font-size: 1.2em;
 }
