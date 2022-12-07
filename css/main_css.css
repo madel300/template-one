@@ -97,9 +97,9 @@ html {
     width: 100%;
 }
 
-.header .container .links:hover ul {
+/* .header .container .links:hover ul {
     display: block;
-}
+} */
 .header .container .links .icon {
     width: 30px;
     display: flex;
@@ -107,6 +107,7 @@ html {
     justify-content:flex-end;
     position: absolute;
     right: 0;
+    z-index: 2;
 }
 
 .header .container .links .icon span {
@@ -114,6 +115,7 @@ html {
     height: 2px;
     background-color: #333333;
     margin-bottom: 5px;
+    z-index: -1;
 }
 
 .header .container .links .icon span:nth-child(2) {
@@ -167,6 +169,10 @@ html {
 
 .header .container .links ul li a:hover {
     padding-left: 25px;
+}
+
+.header .container .links .show {
+    display: block;
 }
  /* end Header  */
  /* Start Landing Section */
